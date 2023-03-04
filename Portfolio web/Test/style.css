@@ -1,0 +1,69 @@
+/*Skiils*/
+.skills {
+  color: #fff;
+}
+/* first section */
+.first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.skiilsBx {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.progress {
+  display: grid;
+  grid-template-columns: 0.3fr 0.5fr;
+}
+.progress-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.titles-section {
+  margin-bottom: 5px;
+}
+/* second section */
+.certificates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 25px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 25px;
+}
+/* third section */
+.third-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.third-section p {
+  padding: 20px 0 20px 0 ;
+}
+.wcid {
+  width: 250px;
+}
+
+.programing-skills {
+  width: 250px;
+}
+
+.hobbiesBx ul{
+  padding: 25px;
+}
+
+.hobbies {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr;
+  gap: 20px;
+  text-align: center;
+  list-style: none;
+}
+

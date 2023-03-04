@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #000;
+}
+article {
+  padding: 0 80px 100px 80px;
+}
+.banner {
+  background: #212121;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.svg {
+  width: 800px;
+  height: auto;
+}
+.banner h2 {
+  font-size: 3em;
+  color: #fff;
+  font-weight: 500;
+}
+.banner span {
+  font-weight: 700;
+}
+.banner h3 {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
+}
+.btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.btn:hover {
+  color: #000;
+}
+header {
+  position: relative;
+  background: #212121;
+  top: 0;
+
+  padding: 60px 5%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.list {
+  display: inline-block;
+}
+.list-740 {
+  display: none;
+}
+.network a {
+  color: #fff;
+  font-size: 24px;
+}
+/* About */
+.about {
+  padding-top: 20px;
+  position: relative;
+  min-height: 100vh;
+  background: #21242a;
+
+  color: #fff;
+}
+.header-about {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 20px;
+}
+.phone {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.content-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.aboutBx {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  padding-left: 100px;
+}
+.aboutBx .title-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-about h2 {
+  text-transform: uppercase;
+}
+.title-about span {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.aboutBx .location {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.img-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Skiils*/
+.skills {
+  color: #fff;
+  background-color: #263137;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+.header-skils {
+  display: flex;
+  justify-content: space-between;
+}
+.titles-section {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+/* first section */
+.skillsBx {
+  display: flex;
+  justify-content: space-around;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  margin-top: 5.5rem;
+}
+.first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.progress {
+  display: flex;
+  gap: 30px;
+}
+.progress-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skills-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+/* second section */
+.certificates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0 45px;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0 0px;
+}
+/* third section */
+.third-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.third-section p {
+  padding: 20px 0 20px 0;
+}
+.wcid {
+  width: 250px;
+}
+
+.programing-skills {
+  width: 250px;
+}
+
+.hobbiesBx ul {
+  padding: 25px;
+}
+
+.hobbies {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr;
+  gap: 20px;
+  text-align: center;
+  list-style: none;
+}
+@media (max-width: 980px) {
+  .banner {
+    justify-content: center;
+  }
+  .svg {
+    display: none;
+    opacity: 0;
+  }
+  .img-about {
+    margin-top: 4rem;
+  }
+  .content-about {
+    grid-template-columns: 1fr;
+  }
+  .skillsBx {
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 780px) {
+  .banner h2 {
+    font-size: 2em;
+  }
+  .banner span {
+    font-weight: 700;
+  }
+  .banner h3 {
+    font-size: 1em;
+  }
+  .logo {
+    display: none;
+  }
+  .list {
+    display: none;
+  }
+  .banner {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .list-740 {
+    padding-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  .title {
+    text-align: flex-start;
+  }
+}
+
+@media (max-width: 680px) {
+  .banner h2 {
+    font-size: 2em;
+  }
+  .banner span {
+    font-weight: 700;
+  }
+  .banner h3 {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: small;
+  }
+  article {
+    padding: 0 10px 100px 10px;
+  }
+  .aboutBx {
+    padding-left: 0;
+  }
+  .title-about {
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+  }
+}
