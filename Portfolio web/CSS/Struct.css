@@ -12,7 +12,6 @@ article {
 }
 .banner {
   background: #212121;
-  position: relative;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -69,10 +68,11 @@ header .logo {
   font-weight: 700;
   letter-spacing: 2px;
 }
-.list {
-  display: inline-block;
+.list-780 {
+  display: flex;
+ align-content: center;
 }
-.list-740 {
+.list-780 {
   display: none;
 }
 .network a {
@@ -105,9 +105,11 @@ header .logo {
 }
 .aboutBx {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 0.5fr;
   padding-left: 100px;
+}
+.text {
+  text-align: justify;
 }
 .aboutBx .title-about {
   display: flex;
@@ -128,7 +130,6 @@ header .logo {
   align-items: center;
   font-size: 12px;
   letter-spacing: 2px;
-  font-weight: 400;
 }
 .img-about {
   display: flex;
@@ -147,9 +148,8 @@ header .logo {
 .skills {
   color: #fff;
   background-color: #263137;
-  position: relative;
   min-height: 100vh;
-  padding-top: 40px;
+  padding: 40px 0 40px 0;
 }
 .header-skils {
   display: flex;
@@ -164,7 +164,6 @@ header .logo {
 .skillsBx {
   display: flex;
   justify-content: space-around;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   margin-top: 5.5rem;
 }
 .first-section {
@@ -188,9 +187,9 @@ header .logo {
   gap: 23px;
   margin-top: 30px;
 }
-.softwareBx {
+/*.softwareBx {
   
-}
+}*/
 .software_skills {
   display: grid;
   grid-template-columns: 1fr 1fr ;
@@ -218,8 +217,8 @@ header .logo {
 }
 /* third section */
 .third-section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
 }
 .third-section p {
@@ -227,11 +226,7 @@ header .logo {
   text-align: justify;
 }
 .wcid {
-  width: 250px;
-}
-
-.programing-skills {
-  width: 250px;
+  text-align: center;
 }
 
 .hobbiesBx ul {
@@ -257,6 +252,9 @@ header .logo {
   }
   .content-about {
     grid-template-columns: 1fr;
+  }
+  .aboutBx {
+    padding: 0;
   }
   .skillsBx {
     flex-wrap: wrap;
@@ -284,9 +282,8 @@ header .logo {
     flex-direction: column;
     justify-content: space-around;
   }
-  .list-740 {
+  .list-780 {
     padding-top: 200px;
-    width: 100%;
     display: flex;
     justify-content: center;
     gap: 5px;
