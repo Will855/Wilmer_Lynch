@@ -48,6 +48,7 @@
   width: 60px;
   height: 60px;
   background: #fff;
+  color: #212121;
   border-radius: 70px;
   transform: translateY(11px);
   transition: transform 0.5s, width 0.5s, height 0.5s;
