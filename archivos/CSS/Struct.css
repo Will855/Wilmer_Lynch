@@ -105,7 +105,7 @@ header .logo {
 }
 .text {
   display: flex;
-  width: 35rem;
+  max-width: 35rem;
   text-align: justify;
   align-items: center;
 }
