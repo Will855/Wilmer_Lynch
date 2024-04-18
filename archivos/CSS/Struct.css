@@ -12,6 +12,10 @@ body {
 article {
   padding: 20px 80px 100px 80px;
 }
+a {
+  color: #f6f6f6;
+  text-decoration: none;
+}
 .banner {
   background: #212121;
   min-height: 99vh;
@@ -75,6 +79,9 @@ header .logo {
   font-size: 24px;
   color: #f6f6f6;
 }
+.network a:hover {
+  color: #bac4c5;
+}  
 /* About */
 .about {
   display: flex;
@@ -196,9 +203,7 @@ header .logo {
     justify-content: space-around;
   }
   .list-780 {
-    padding-top: 200px;
     display: flex;
-    justify-content: center;
     gap: 5px;
   }
   .title {
