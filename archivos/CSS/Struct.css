@@ -115,6 +115,7 @@ header .logo {
   max-width: 35rem;
   text-align: justify;
   align-items: center;
+  margin: 0px 2rem;
 }
 .aboutBx .title-about {
   display: flex;
