@@ -47,7 +47,6 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  background: #fff;
   color: #212121;
   border-radius: 70px;
   transform: translateY(11px);
@@ -80,6 +79,11 @@
   opacity: 1;
   visibility: visible;
 }
+.menuToggle.active ~ .menu {
+  background: snow;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Mejor curva de timing */
+
+}
 .menu ul li:nth-child(3) {
   width: 30px;
 }
@@ -87,10 +91,10 @@
   display: block;
   font-size: 2em;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #212121;
 }
 .menu ul li:hover a {
-  color: #212121;
+  scale: 1.2;
 }
 
 @media (max-width: 740px) {
@@ -115,5 +119,11 @@
   }
   .menu ul li a {
     font-size: 1.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuToggle.active ~ .menu {
+    width: 300px; /* Ancho menor para móviles */
   }
 }
